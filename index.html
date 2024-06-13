@@ -9,12 +9,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* URL da imagem de fundo */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área do corpo */
+            background-position: center; /* Centraliza a imagem de fundo */
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
             padding: 10px 20px;
             border-radius: 15px;
             margin: 10px;
@@ -32,12 +35,28 @@
             max-height: 50px;
         }
         .games-section {
+            display: flex;
+            justify-content: space-around;
             padding: 20px;
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+            margin: 20px;
+            border-radius: 10px;
         }
-        .games-section img {
+        .game {
+            flex: 1;
+            max-width: 45%;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .game img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
         }
         .play-button {
             display: inline-block;
@@ -49,6 +68,7 @@
             font-size: 18px;
             border-radius: 5px;
             transition: background-color 0.3s;
+            cursor: pointer;
         }
         .play-button:hover {
             background-color: #0056b3;
@@ -66,15 +86,26 @@
         </div>
     </div>
     <div class="games-section" id="gamesSection">
-        <img src="https://cdn2.scratch.mit.edu/get_image/project/598094369_144x108.png" alt="Legendary Games Image">
-        <br>
-        <button onclick="window.location.href='indexx.html'" class="play-button">Jogar</button>
+        <div class="game">
+            <img src="https://cdn2.scratch.mit.edu/get_image/project/598094369_144x108.png" alt="Legendary Games Image">
+            <br>
+            <button onclick="window.location.href='indexx.html'" class="play-button">Jogar</button>
+        </div>
+        <div class="game">
+            <img src="https://cdn2.scratch.mit.edu/get_image/project/437465406_144x108.png" alt="Legendary Games Image2">
+            <br>
+            <button onclick="window.location.href='game2.html'" class="play-button">Jogar</button>
+        </div>
+        <div class="game">
+            <img src="https://cdn2.scratch.mit.edu/get_image/project/437465406_144x108.png" alt="Legendary Games Image2">
+            <br>
+            <button onclick="window.location.href='game3.html'" class="play-button">Jogar</button>
+        </div>
+        <div class="game">
+            <img src="https://cdn2.scratch.mit.edu/get_image/project/437465406_144x108.png" alt="Legendary Games Image2">
+            <br>
+            <button onclick="window.location.href='game4.html'" class="play-button">Jogar</button>
+        </div>
     </div>
-</body>
-<body>     
-
-
-
-
 </body>
 </html>
