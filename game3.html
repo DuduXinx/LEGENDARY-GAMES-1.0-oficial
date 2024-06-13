@@ -1,1 +1,99 @@
-<iframe src="https://scratch.mit.edu/projects/419503825/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legendary Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* URL da imagem de fundo */
+            background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área do corpo */
+            background-position: center; /* Centraliza a imagem de fundo */
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+            padding: 10px 20px;
+            border-radius: 15px;
+            margin: 10px;
+        }
+        .navbar a, .navbar button {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar img {
+            max-height: 50px;
+        }
+        .games-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .game {
+            flex: 1;
+            max-width: 45%;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .game img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+        }
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        .play-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <a href="home.html">Home</a>
+            <a href="discovery.html">Discovery</a>
+            <button onclick="window.location.href='index.html'">Center</button>
+        </div>
+        <div>
+            <img src="https://cdn.discordapp.com/attachments/1175494981524394014/1250866806252507166/Legendary_GAMES-removebg-preview.png?ex=666c7ffe&is=666b2e7e&hm=3cf382c0a5e030bfc5f7bf5a6a9c6127bb3ece22fb995a73b719c15195bb38d4&" alt="Logo">
+        </div>
+    </div>
+
+    <div class="games-section" id="gamesSection">
+        <div class="game">
+            <iframe src="https://scratch.mit.edu/projects/419503825/embed" allowtransparency="true" width="100%" height="300" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <h2>NINJA BRAWL (unfinished series)</h2>
+            <p>This is an unfinished project, but still playable. I am sharing some of these projects as I have pretty much moved on from Scratch, but I hope you enjoy what's left in some of my junk :)</p>
+            <button onclick="window.location.href='index.html'" class="play-button">Center/home</button>
+        </div>
+    </div>
+</body>
+</html>
