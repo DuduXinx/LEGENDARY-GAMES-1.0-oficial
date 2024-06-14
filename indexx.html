@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +10,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* URL do background */
-            background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área do corpo */
-            background-position: center; /* Centraliza a imagem de fundo */
+            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente para legibilidade */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
             padding: 10px 20px;
             border-radius: 15px;
             margin: 10px;
@@ -35,32 +41,44 @@
             max-height: 50px;
         }
         .games-section {
+            display: flex;
+            justify-content: space-around;
             padding: 20px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the game section */
             margin: 20px;
             border-radius: 10px;
         }
-        .games-section img {
+        .game {
+            flex: 1;
+            max-width: 45%;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the game section */
+        }
+        .game img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Soft shadow for the game image */
         }
         .play-button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
             background-color: #007BFF;
-            color: white;
+            color: rgb(99, 99, 99);
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
             transition: background-color 0.3s;
             cursor: pointer;
+            border: none;
         }
         .play-button:hover {
-            background-color: #0056b3;
+            background-color: #525252;
         }
     </style>
 </head>
@@ -69,35 +87,26 @@
         <div>
             <a href="home.html">Home</a>
             <a href="discovery.html">Discovery</a>
-            <button onclick="window.location.href='center.html'">Center</button>
+            <button onclick="window.location.href='index.html'">Center</button>
         </div>
         <div>
-            <img src="https://cdn.discordapp.com/attachments/1175494981524394014/1250866806252507166/Legendary_GAMES-removebg-preview.png?ex=666c7ffe&is=666b2e7e&hm=3cf382c0a5e030bfc5f7bf5a6a9c6127bb3ece22fb995a73b719c15195bb38d4&" alt="Logo">
+            <img src="https://cdn.discordapp.com/attachments/1175494981524394014/1250866806252507166/Legendary_GAMES-removebg-preview.png?ex=666c7ffe&is=666b2e7e&hm=3cf382c0a5e030bfc5f7bf5a6a9c6127bb3ece22fb995a73b719c15195bb38d4" alt="Logo">
         </div>
     </div>
 
     <div class="games-section" id="gamesSection">
-        <iframe src="https://scratch.mit.edu/projects/598094369/embed" allowtransparency="true" width="950" height="560" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <div class="game">
+            <iframe src="https://scratch.mit.edu/projects/598094369/embed" allowtransparency="true" width="500" height="500" frameborder="0" scrolling="no" allowfullscreen></iframe>
         <h2>NINJA BRAWL (unfinished series)</h2>
-        <p>This is an unfinished project, but still playable. I am sharing some of these projects as I have pretty much moved on from Scratch, but I hope you enjoy what's left in some of my junk :)</p>
+        <p>This is an unfinished project, but it's still playable. I'm sharing these projects as I've moved on from Scratch, but I hope you enjoy what's left of my past work.
+        </p>
         
-        <h1>INSTRUCTIONS</h1>
-        <p>
-            - [ARROW] keys to move<br>
             - [Z] key to slash enemies<br>
             - [X] key to dash<br>
-            - Avoid baddies<br>
-            - There are no settings so don't bother clicking settings
         </p>
-        
-        <h3>CREDITS</h3>
-        <p>
-            - Code and art by me<br>
-            - Thumbnail by @-Space_Cookie-<br>
-            - Music is called "Prepare for Battle!"
-        </p>
-        
-        <button onclick="window.location.href='indexx.html'" class="play-button">Jogar</button>
+            <button onclick="window.location.href='index.html'" class="play-button">Center/home</button>
+        </div>
     </div>
 </body>
 </html>
+

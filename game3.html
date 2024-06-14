@@ -9,15 +9,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* URL da imagem de fundo */
-            background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área do corpo */
-            background-position: center; /* Centraliza a imagem de fundo */
+            background-image: url('https://cdn.discordapp.com/attachments/1188974807350509640/1250926397220720660/360_F_417440234_w6uhv93WE60EYsYy.png?ex=666cb77e&is=666b65fe&hm=bb6bb5706cb03f76e7e301050b23b4c5256506ae800836036710968a76b8aaaf&'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
             padding: 10px 20px;
             border-radius: 15px;
             margin: 10px;
@@ -39,7 +44,7 @@
             justify-content: space-around;
             padding: 20px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para destacar o conteúdo */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the game section */
             margin: 20px;
             border-radius: 10px;
         }
@@ -50,13 +55,13 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the game section */
         }
         .game img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the game image */
         }
         .play-button {
             display: inline-block;
@@ -69,6 +74,7 @@
             border-radius: 5px;
             transition: background-color 0.3s;
             cursor: pointer;
+            border: none;
         }
         .play-button:hover {
             background-color: #0056b3;
@@ -83,7 +89,7 @@
             <button onclick="window.location.href='index.html'">Center</button>
         </div>
         <div>
-            <img src="https://cdn.discordapp.com/attachments/1175494981524394014/1250866806252507166/Legendary_GAMES-removebg-preview.png?ex=666c7ffe&is=666b2e7e&hm=3cf382c0a5e030bfc5f7bf5a6a9c6127bb3ece22fb995a73b719c15195bb38d4&" alt="Logo">
+            <img src="https://cdn.discordapp.com/attachments/1175494981524394014/1250866806252507166/Legendary_GAMES-removebg-preview.png?ex=666c7ffe&is=666b2e7e&hm=3cf382c0a5e030bfc5f7bf5a6a9c6127bb3ece22fb995a73b719c15195bb38d4" alt="Logo">
         </div>
     </div>
 
